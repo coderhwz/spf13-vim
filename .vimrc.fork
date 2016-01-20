@@ -1,0 +1,23 @@
+set background=light
+set nospell
+if has("gui_macvim")
+    set guifont=Monaco:h13
+endif
+
+if !has("gui_running")
+    colorscheme emacs
+endif
+
+
+nnoremap <C-Right> :bn<CR>
+nnoremap <C-Left> :bp<CR>
+nnoremap <leader><space> :w<CR>
+nnoremap <leader>f :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>m :CtrlPMRU<CR>
+nnoremap <F2> :NERDTreeToggle<CR>
+nnoremap <S-F2> :NERDTreeMirror<CR>
+nnoremap <S-F3> :CtrlPClearCache<CR>
+let g:NERDTreeChDirNode=1
+vmap <F4> :Tabularize/=><CR>
+let snips_author='coderhwz'
